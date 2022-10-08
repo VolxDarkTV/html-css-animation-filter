@@ -121,7 +121,7 @@
     0%{
         transform: translate(0px);
     }
-    60%{
+    50%{
         transform: translate(-100px);
     }
     100%{
@@ -141,24 +141,64 @@
 /* Esercizio 13 */
 @keyframes top2-translation{
     0%{
-        transform: translate(0px);
+        top: (-10px);
+        left: (10%);
     }
-    10%{
-        transform: translate(140px);
+    25%{
+        top: -10px;
+        left: calc(100% - 30px);
     }
-    20%{
-        transform: translateY(70px);
+    50%{
+        top: 100%;
+        left: calc(100% - 30px);
     }
-    30%{
-        transform: translate(-140px);
+    75%{
+        top: 100%;
+        left: -5px;
     }
-
+    90%{
+        top: -10px;
+        left: -10px;
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+ 
 }
 .ex-13-button:hover .ex-13-top-white{
     animation-name: top2-translation;
-    animation-duration: 10s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes bottom2-translation{
+    0%{
+        bottom: (-10px);
+        right: (20%);
+    }
+    25%{
+        bottom: -10px;
+        right: calc(100% -30px);
+    }
+    50%{
+        bottom: 100%;
+        right: calc(100% - 30px);
+    }
+    75%{
+        bottom: 100%;
+        right: -5px;
+    }
+    90%{
+        bottom: -10px;
+        right: -10px;
+    }
+    100%{
+        top: -10px;
+        right: 20%;
+    }
 }
 .ex-13-button:hover .ex-13-bottom-white{
+    animation-name: bottom2-translation;
     animation-duration: 5s;
+    animation-timing-function: linear;
 }
-/* Dac completare */
